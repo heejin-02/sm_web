@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자의 종류 */
+        /* 
+        (1) 전체선택자 : *
+        - HTML 문서의 모든 요소를 선택
+        */
+
+        * {
+            color:cornflowerblue;
+        }
+        /*
+        (2) 태그 선택자 : 태그이름
+        */
+        li {
+            color: darkorange;
+        }
+
+        /* 내가 스타일을 구분해서 지정해주고 싶을 때
+        -> 클래스, 아이디 사용 
+        
+        클래스 : 중복가능. 재사용성 뛰어남
+        아이디 : 중복 불가능. 한 문서에 같은 아이디를 가진게 없게끔!
+        (로고, 상단바, 검색창 같은 고유한 디자인에 사용)
+        */
+        /*
+        (3) 클래스 선택자 : .클래스이름 */
+        .one {
+            color: darkgreen;
+        }
+
+        /*
+        (4) 아이디 선택자 : #아이디이름 */
+        #two {
+            color: darkred;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 class="one">내가 좋아하는 것</h1>
+    
+    <ul>
+        <li>치이카와</li>
+        <li id="two">주녕</li>
+    </ul>
+
+    <p class="one">너무너무졸려요</p>
+
+</body>
+
+</html>

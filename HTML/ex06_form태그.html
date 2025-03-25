@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    form 태그 : 웹페이지에 입력받을 수 있는 공간을 만들어주는 태그
+    action 속성 : form 안에서 입력한 데이터의 전달 위치 지정
+                  GET(기본값), POST  
+
+    input 태그 : 사용자에게 입력을 받을 수 있는 태그
+                -> type 속성에 따라 다양한 것을 입력받을 수 있음
+                ==> password(비밀번호), submit(제출), reset(초기화)
+
+    *input의 추가 속성 : name(input 태그끼리의 구분값)
+                         maxlength(글자 수 제한)
+                         placeholder(미리보기 텍스트)
+    -->
+
+    <form action ="#" method = "post">
+        <span>ID</span>
+        <input type="text" name ="id" maxlength="5"
+        placeholder="5글자 내로 입력"> <br>
+        <span>PW</span>
+        <input type="password" name="pw">
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

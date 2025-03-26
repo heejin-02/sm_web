@@ -18,20 +18,42 @@
             color : red;
         }
         /* (2-2) 자식 선택자
-            기호 : > */
+            기호 : > 
+        */
         ul>li {
             color : blue;
         }
 
+        /* (2-3) 인접형제선택자(근접후행선택자)
+            기호 : + 
+        */
+        .one+li {
+            background-color: lemonchiffon;
+        }
+
+        /* p의 동생이면 모두 */
+        p+* {
+            background-color: springgreen;
+        }
+
+        /* (2-4) 일반형제선택자(후행선택자)
+            기호 : ~ */
+        p ~ p {
+            font-family: '궁서';
+        }
+
+        .one ~ li {
+            font-family: '휴먼매직체';
+        }
 
 
-        
+
     </style>
 </head>
 <body>
     <p>1번</p>
     <ul>
-        <li>2번</li>
+        <li class ="one">2번</li>
         <li>3번</li>
         <li>4번</li>
         <p>??</p>

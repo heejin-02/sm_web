@@ -46,11 +46,40 @@
             font-family: '휴먼매직체';
         }
 
+        /* (3) 반응선택자
+            - 선택자:hover => 요소에 마우스를 올리고 있는 동안만!!
+            - 선택자:active => 요소를 클릭하고 있는 동안!! */
 
+        #only {
+            color : darkorange;
+        }
+        h1:hover {
+            color:crimson;
+        }
+
+        h1:active {
+            color:rgb(43, 137, 226);
+        }
+
+
+        /*  CSS 명시도 
+            전체선택자(*) - 0 
+            태그선택자(태그명) - 1 
+            클래스선택자(.클래스명) - 10
+            아이디선택자(#아이디명) - 100
+            => 조합 선택자의 경우, 사용한 선택자들을 일일히 덧셈 계산하기
+        */
+        /*  !important 키워드
+            - 명시도를 10000정도로 높임 */
+        h1 {
+            color:brown !important;
+        }
+        
 
     </style>
 </head>
 <body>
+    <h1 id = "only">건강하게 살기</h1>
     <p>1번</p>
     <ul>
         <li class ="one">2번</li>

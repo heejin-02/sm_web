@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var : 재선언 O 재할당 O
+        // let : 재선언 X 재할당 O
+        // const : 재선언 X 재할당 X -> 상수
+        var a = 2;
+        var a = 3; // 재선언 가능
+        a = 4; // 재할당 가능
+        console.log(a);
+
+        let b =1;
+        // let b =2; // 오류
+        b =2; // 재선언 불가, 재할당 가능
+    </script>
+</body>
+</html>

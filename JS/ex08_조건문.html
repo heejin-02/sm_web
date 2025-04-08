@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 조건문 : 단순if, if-else, elseif, switch-case
+
+
+      /*  let change = confirm("비밀번호를 변경하시겠습니까?");
+        
+        // 만약에 사용자가 "네" 했다면
+        if(change == true) {
+            alert("변경 완료 되었습니다.")
+        } 
+        */
+
+       let java_score = Number(prompt("자바 점수를 입력하세요"));
+       let web_score = Number(prompt("웹 점수를 입력하세요"));
+       let and_score = Number(prompt("안드로이드 점수를 입력하세요"));
+       let total_score = ParseInt((java_score+web_score+and_score) / 3);
+
+       if (total_score >= 90) {
+            console.log("당신의 평균은 A 학점입니다.")
+       } else if (total_score >= 80) {
+            console.log("당신의 평균은 B 학점입니다.")
+       } else if (total_score >= 70) {
+            console.log("당신의 평균은 C 학점입니다.")
+       }
+       else {
+            console.log("당신의 평균은 D 학점입니다.")
+       }
+
+
+     
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

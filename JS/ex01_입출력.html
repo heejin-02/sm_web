@@ -1,0 +1,43 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>즐거운 자바스크립트</h1>
+
+    <script>
+        // HTML 파일 안에 자바스크립트를 사용하기 위해서는 
+        // <script> 태그를 선언: 위치(body 끝태그 위)
+
+        // 출력문
+        // 1. docuument.write() -> 문서(HTML) 직접 작성할 때
+        document.write("안녕");
+        document.write("<h2>안녕</h2>"); // 태그를 사용하면 HTML 태그로 인식
+
+        // 2. alert() -> 알림 팝업창 실행
+        // 주의점! 무조건 웹페이지가 시작될 때 가장 먼저 실행
+        alert("가입되었습니다.");
+
+        // 3. console.log() -> 콘솔창에 로그를 남길 때
+        // 콘솔 위치 : f12 -> 개발자 도구의 console
+        console.log("확인 완료!");
+
+        // 입력문
+        // 1. confirm()
+        // -> 사용자에게 확인 or 취소를 입력받음
+        // 리턴 타입: boolean  확인: true, 취소: false
+        console.log(confirm("가입하시겠습니까?"));
+
+        // 2. prompt()
+        // -> 사용자에게 직접 키보드 입력값을 받음
+        // 사용자의 입력값을 String 타입으로 리턴
+        console.log(prompt("이름을 입력하세요."));
+    </script>
+
+
+
+  </body>
+  </html>

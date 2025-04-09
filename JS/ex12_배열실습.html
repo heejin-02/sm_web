@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 1~100까지 5개의 랜덤숫자 배열 저장한 후,
+        // 2. 가장 큰 수를 저장하는 변수를 정의
+        // 3. 5개의 랜덤수를 배열에 저장
+        // 4. 배열 내 데이터끼리 비교, 가장 큰 수를 1번 변수에 저장
+        // 5. 콘솔에 결과값 출력
+        // --> 34,12,56,89, 22 중 가장 큰 수는 89 입니다
+
+
+        let random_arr = [];
+        let ran_max = 0;
+ 
+        for (let i = 0; i<5; i++) {
+            random_arr.push(parseInt(Math.random() *100 +1));
+        }
+        for(let i=0; i<5; i++) {
+            if(ran_max < random_arr[i]) {
+                ran_max = random_arr[i];
+            }
+        }
+        console.log(random_arr +" 중 가장 큰 수는 " + ran_max + " 입니다");
+        
+
+
+    </script>
+</body>
+</html>

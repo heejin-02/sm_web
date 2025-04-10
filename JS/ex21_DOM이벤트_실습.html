@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>내용 변경 전</h1>
+    
+    <button>h1 내용 변경</button>
+    <button>area에 a태그 추가</button>
+    <button>area에 ul태그 추가</button>
+    <ul></ul>
+
+    <div id="area">
+
+    </div>
+    <script>
+        // 1번 버튼 누르면, h1 태그의 내용이 즐거운 자바스크립트 수업으로 변경
+        let h1_tag = document.getElementsByTagName("h1")[0];
+        let btn1 = document.getElementsByTagName("button")[0];
+        btn1.addEventListener("click",()=>{
+            h1_tag.innerHTML = "<h1>즐거운 자바스크립트 수업</h1>"
+        })
+        // 2번 버튼 누르면, area 안에 유튜브로 이동할 수 있는 a태그 생성
+        let btn2 = document.getElementsByTagName("button")[1];
+        btn2.addEventListener("click",()=>{
+            area.innerHTML += '<a href="https://www.youtube.com/">유튜브 링크</a>'
+        })
+        // 3번 버튼 누르면, ul으로 -html -css -js리스트 생성
+        let btn3 = document.getElementsByTagName("button")[2];
+        btn3.addEventListener("click",()=>{
+            area.innerHTML += '<ul><li>html</li><li>css</li><li>js</li></ul>'
+        })
+        // -> 2번 3번 버튼은 누를때마다 area에 계속 누적해서 더하기
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

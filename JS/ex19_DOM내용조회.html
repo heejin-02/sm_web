@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg">배고파아아아</p>
+
+    <div id="area">
+        <h1>졸</h1>
+        <h2>리다</h2>
+    </div>
+
+    <script>
+    //area라는 아이디값을 가진 요소를 area 변수에 저장
+    let area = document.getElementById("area");
+    //area 출력
+    console.log(area);
+    // area의 content 전체 출력
+    console.log(area.innerHTML);
+    
+
+
+    // msg라는 아이디값을 가진 요소를 가져와서
+    // msg라는 변수에 저장
+
+    let msg = document.getElementById("msg");
+    console.log("p태그: " , msg);
+    
+    // msg의 전체 content에 접근
+    console.log(msg.innerHTML);
+
+    // msg의 content 내용 변경
+    msg.innerHTML = "내용변경완료!";
+    msg.innerHTML += "내용추가완료!";
+    
+    
+    
+
+
+    </script>
+</body>
+</html>

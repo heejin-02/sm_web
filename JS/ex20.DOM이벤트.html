@@ -29,12 +29,20 @@
 
         // p태그를 클릭하면 console창에 "p 클릭 됨!" 출력
         let p = document.getElementById("txt");
-
         txt.addEventListener("click",()=>{
             alert("p 클릭 됨!")
         })
 
-
+        // body영역을 더블클릭하면 console창에 "더블클릭 이벤트 발생" 출력
+        let body = document.getElementsByTagName("body")[0];
+        const dbEvent = function() {
+            console.log("더블클릭이벤트 발생");
+            
+        }
+        // 외부에 정의된 함수를 콜백함수로 활용할 때는
+        // 함수 호출 부분에 소괄호를 적지않는다
+        // -> 소괄호를 만나면 즉시 실행을 해버림
+        body.addEventListener("dblclick",dbEvent)
 
 
 

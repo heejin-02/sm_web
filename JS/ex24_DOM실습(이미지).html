@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="ipt">
+    <button id="btn">적용</button>
+    <br>
+    <img src="https://i.namu.wiki/i/Yu5BDHQYknKmChLkS9bgOR0jqfE3ojWF_VgjMJ3nhbmztCFy_qp8pFs0eN4q7sM8FYnCU8Nv89wAPcBPMXo3Sg.webp"
+        id="img" alt="">
+
+    <script>
+        // input태그에 값을 적고 엔터를 누르면 
+        // 입력값이 강아지.. img를 강아지에 해당하는 src값으로 변경
+        // 입력값이 고양이.. img를 고양이에 해당하는 src값으로 변경
+        // ** 이미지 추가가 아닌 변경
+
+        let img = document.getElementById("img");
+        let ipt = document.getElementById("ipt");
+        // img 태그의 src속성에 접근
+        console.log(img.src);
+        // src 값 변경
+
+        ipt.addEventListener("keydown", function (e) {
+            if (e.key == "Enter") {
+                if (ipt.value === "강아지") {
+                    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkBZXKguD8smej1GlMSmURcnAV2HM-0zb8q5CryDjKikd4HNWRpuAe3Ggxg8coc6Ga5tU&usqp=CAU";
+                }
+
+                else if (ipt.value === "고양이") {
+                    img.src = "https://i.pinimg.com/236x/f3/dc/25/f3dc2527f134cd3f482bbb78d8ec8165.jpg";
+                }
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>

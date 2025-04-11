@@ -26,8 +26,10 @@
         let btn = document.getElementById("btn");
         let area = document.getElementById("area");
 
-        let movie_url = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=06ba645b86594a7c80cc349e4a910bdd&targetDt=20250401"
 
+        let movie_date = prompt("원하는 날짜를 yyyymmdd형식으로 입력하세요 : ");
+        let movie_url = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=06ba645b86594a7c80cc349e4a910bdd&targetDt="+movie_date;
+                       
         let getMovie = () => {
             // 영화정보를 비동기통신으로 요청
             $.ajax({

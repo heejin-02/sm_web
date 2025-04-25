@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #reset {
+            margin-right: 100px;
+            margin-left: 0px;
+        }
+
+        button {
+
+            margin-right: 0px;
+            margin-left: 150px;
+
+        }
+
+        table {
+            width: 400px;
+        }
+
+        .tr1 {
+
+            background-color: gray;
+            height: 50px;
+            text-align: center;
+        }
+
+        .tr2 {
+            background-color: whitesmoke;
+            height: 35px;
+            
+        }
+
+        .td1 {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <!-- step1 시작 -->
+            <tr class="tr1">
+                <th colspan="2">Step1. 아이디/비번 입력 </th>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">아이디</td>
+                <td>
+                    : <input type="text">
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">비밀번호</td>
+                <td>
+                    : <input type="password">
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">비밀번호 확인</td>
+                <td>
+                    : <input type="password">
+                </td>
+            </tr>
+            <!-- step1 끝 -->
+
+            <!-- step2 시작 -->
+            <tr class="tr1">
+                <th colspan="2">Step2. 개인정보 </th>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">성별</td>
+                <td>
+                    : <span>남</span>
+                    <input type="radio" name="gender" value="man">
+                    <span>여</span>
+                    <input type="radio" name="gender" value="woman">
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">혈액형</td>
+                <td>
+                    : <select name="blood type">
+                        <option value="A형">A형</option>
+                        <option value="B형">B형</option>
+                        <option value="O형">O형</option>
+                        <option value="AB형">AB형</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">생일</td>
+                <td>
+                    : <input type="date">
+                </td>
+            </tr>
+            <!-- step2 끝 -->
+            <!-- step3 시작 -->
+            <tr class="tr1">
+                <th colspan="2">Step3. 선호도 </th>
+            </tr>
+            <tr class="tr2">
+                <td class="td1">취미</td>
+                <td>
+                    : <span>축구</span>
+                    <input type="checkbox" name="soccer">
+                    <span>야구</span>
+                    <input type="checkbox" name="baseball">
+                    <span>농구</span>
+                    <input type="checkbox" name="basketball">
+                </td>
+            <tr class="tr2">
+                <td class="td1">좋아하는 색깔</td>
+                <td>
+                    :  <input type="color">
+                </td>
+            </tr>
+            </tr>
+            <tr class="tr1">
+                <th colspan="2">Step4. 하고싶은말 </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="comment" cols="53" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
+        <button>제출</button>
+        <input id="reset" type="reset" value="초기화">
+    </form>
+
+</body>
+
+</html>
